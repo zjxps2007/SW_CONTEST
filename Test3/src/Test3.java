@@ -16,7 +16,7 @@ public class Test3 {
         System.out.println("기화는 총5번입니다.");
         System.out.println("숫자의 범위는 1-10 입니다.");
         //5번까지 반복하면서 값을 비교
-        for(int i = 0; i <= 5; i++) {
+        for(int i = 0; i < 5; i++) {
             System.out.print(i+1+"번쨰 기회 : ");
             num = scanner.nextInt();
             //같을 경우 출력후 정지

@@ -14,19 +14,22 @@ public class Test2 {
             }
             else {
                 int i = 0;
-                while (i < num) {
-                    i++;
-                    int j = 1;
-                    while (j < num-i) {
+                //입력받은 수의 절반 +1반큼의 높이만큼
+                while (i<num/2+1){
+                    int j = 0;
+                    //입력받은 수의 절반 +1 -i 만큼 공백
+                    while (j<(num/2+1)-i) {
                         System.out.print(" ");
                         j++;
                     }
                     j = 0;
-                    while (j < 2*i+1) {
+                    //j가 2*i+1 일때 별 찍음
+                    while (j<2*i+1) {
                         System.out.print("*");
                         j++;
                     }
                     System.out.println();
+                    i++;
                 }
                 break;
             }
